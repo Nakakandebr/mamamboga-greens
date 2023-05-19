@@ -2,8 +2,9 @@
 body {
 	font-family: Arial, sans-serif;
   background-color: aliceblue;
-	margin: 2%;
-	padding: 0px;
+	
+	/* padding: 0px; */
+  color: rgb(50, 59, 50);
  
 }
 
@@ -16,7 +17,7 @@ body {
   top: 0;
   background: green;
   z-index: 2;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 nav ul li{
   list-style: none;
@@ -186,7 +187,7 @@ section:nth-of-type(3) p {
   .team-member h3 {
     margin-top: 10px;
     font-size: 20px;
-    margin-left: -5%;
+    margin-left: 15%;
 
   }
   
