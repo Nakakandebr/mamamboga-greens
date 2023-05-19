@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Shopping</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <img  id="logo" src="/images/mama greens (1).jpg" alt="Logo">
+
+  <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+</div>
+
+
+	<main>
+		<section id="home">
+			<h1>Welcome to MamaGreens</h1>
+			<p>Here you can find a wide range of high-quality products at affordable prices. Mama Greens is an end to end tool on the market that links vegetable vendors with their customers.
+        Its consistent, efficient and profitable local online connection.
+        </p>
+			<a href="#">Explore MamaGreens</a>
+		</section>
+  
+    <!-- <header> -->
+      <!-- <h1></h1> -->
+      <!-- <p>Fruits and vegetables are low in calories and high in fiber which can  -->
+        <!-- help with weight management. Fiber helps us feel full and satisfied, -->
+        <!-- which can prevent overeating and promote healthy digestion. -->
+        <!-- Eating a diet rich in fruits and vegetables can also help reduce the risk of obesity, </p> -->
+      <!-- <img src="/images/berries.jpeg" alt="Fruits"> -->
+    <!-- </header> -->
+    <section class="about-app">
+            <h2 id="pro">Discover Our App</h2>
+            <div class="app-image">
+               <img  id="ph" src="/images/3 phones.png" alt="App Screenshot">
+            </div>
+            <div class="app-description">
+              <p>Mama Green  app makes it easy  for customers  to connect with Mama Mboga around the country  who sell fresh produce.
+              <a href="#" class="download-button">Download Now</a>
+            </div>
+
+
+
+
+
+		<section class="images" id="product">
+			<h2 id="pro">Products</h2>
+			<ul class="image">
+				<li><img   src="/images/tomato.jpg"><p>Tomatoes</p></li>
+				<li><img src="/images/ff.jpg"><p>Red pepper</p></li>
+				<li><img  src="/images/frut.jpg"><p>Fruits</p></li>
+			</ul>
+		</section>
+
+    <section id="story">
+      <div class="container">
+        <h2 id="pro" >Our Story</h2>
+        <div class="mamamboga-wrapper">
+          <img src="/images/mama mboga.jpg" alt="Mama Mboga" class="mamamboga-image">
+          <p class="mamamboga-description">Mama Mboga started selling fresh produce in her local community and quickly became known for her high-quality, organic vegetables. Over time, she expanded her business by working with other local farmers and building strong relationships with her customers.</p>
+        </div>
+      </div>
+    </section>
+    
+		<section id="about">
+              
+			<h2 id="pro">About Us</h2>
+			<p>Mama Greens has revolutionized the local fresh fruits and vegetables
+        sector such that it is easier for Mama Mboga to market her products and reach her customers.
+        
+           </p>
+            <section class="team">
+              <div class="team">
+                <h2 id="our">Our Team</h2>
+                <div class="team-member">
+                  <img src="/images/wamboimegan.jpg" alt="Person 1">
+                  <h3>Margret Wamboi</h3>
+                  <p>Product Manager</p>
+                </div>
+                <div class="team-member">
+                  <img src="/images/henr.jpg" alt="Person 2">
+                  <h3>Henriette Oloo</h3>
+                  <p>UI/UX Researcher</p>
+                </div>
+                <div class="team-member">
+                  <img src="/images/becky.png" alt="Person 3">
+                  <h3>Becky Nakachwa</h3>
+                  <p>UI/UX designer</p>
+                </div>
+                <div class="team-member">
+                  <img src="/images/Bridget.jpg" alt="Person 4">
+                  <h3>Bridget Kakande</h3>
+                  <p>Software Developer</p>
+                </div>
+                <div class="team-member">
+                  <img src="/images/flo (1).png" alt="Person 5">
+                  <h3>Florence Wangui</h3>
+                  <p>Software Developer</p>
+                </div>
+                </div>
+              </div>
+              
+              </section>
+		</section>
+	</main>
+<footer id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Contact Us</h2>
+        <p>Phone: +25684676</p>
+        <p>Email: Amamama</p>
+        <p>Address: AkiraChix</p>
+      </div>
+      <div class="col">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><i class='bx bxl-twitter'></i>Twitter</a></li>
+          <li><i class='bx bxl-linkedin'></i>Linkedin</a></li>
+          <li><i class='bx bxl-facebook-circle'></i>Facebook</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Working Hours</h3>
+        <p>Mon-Fri 08:00-22:00</p>
+        <p>Sat-Sun 03:00-20:00</p>
+        <p>You can pay using:</p>
+        <!-- <img src="/images/mpesa.png" alt="Mpesa logo"> -->
+        <!-- <img src="/images/pay.jpg" alt="PayPal logo"> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  var menuBtn = document.getElementById("menuBtn")
+  var sideNav = document.getElementById("sideNav")
+  var menu = document.getElementById("menu")
+  sideNav.style.right = "-250px"
+  menuBtn.onclick = function(){
+      if(sideNav.style.right == "-250px"){
+          sideNav.style.right = "0";
+          menu.src = "images/close.png";
+      }
+      else{
+           sideNav.style.right = "-250px";
+           menu.src = "images/menu.png";
+      }
+  }
+</script>
+
+
+</body>
+</html>
