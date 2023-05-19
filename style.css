@@ -4,7 +4,7 @@ body {
   background-color: aliceblue;
 	margin: 2%;
 	padding: 0px;
-  background-color:white;
+ 
 }
 
 
@@ -43,19 +43,20 @@ nav ul li a{
   margin-top: 15px;
 }
 
+
 /* Homepage Styles */
 section:nth-of-type(1) {
 	text-align: center;
 }
 
 section:nth-of-type(1) h1 {
-	font-size: 36px;
+	font-size: 35px;
 	margin-top: 0;
   color: green;
 }
 
 section:nth-of-type(1) p {
-	font-size: 25px;
+	font-size: 18px;
 	margin-top: 10;
   padding: 10px;
   margin-left: 10%;
@@ -92,7 +93,7 @@ section:nth-of-type(2) ul {
 }
 #pro{
   color: green;
-  font-size: 35px;
+  font-size: 30px;
 
 }
 
@@ -108,11 +109,16 @@ section:nth-of-type(2) img {
 	max-width: 90%;
    border-radius: 10%; 
 
+   margin-left: 20%;
+  
+   
+  
+
   
 }
 
 section:nth-of-type(2) p {
-	font-size: 16px;
+	font-size: 18px;
 	margin-top: 5px;
   
 }
@@ -133,16 +139,16 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h2 {
-	font-size: 24px;
+	font-size: 20px;
 	margin-top: -2%; 
  
 }
 #logo{
-  width: 4vw;
+  width: 6vw;
 }
 
 section:nth-of-type(3) p {
-	font-size: 25px;
+	font-size: 18px;
 	margin-top: 10px;
   letter-spacing: 0.5px;
  
@@ -154,7 +160,7 @@ section:nth-of-type(3) p {
   }
   
   .team h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin-top: 0;
   }
   
@@ -179,13 +185,18 @@ section:nth-of-type(3) p {
   
   .team-member h3 {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
+    margin-left: -5%;
+
   }
   
   .team-member p {
-    margin-top: 5px;
+    margin-top: 4px;
     font-size: 18px;
+    margin-left: 30%;
+  
   }
+  
   
   /* Media queries */
   @media only screen and (max-width: 767px) {
@@ -193,14 +204,30 @@ section:nth-of-type(3) p {
     .team {
       padding: 10px;
     }
-    .image{
-       justify-content: space-between; 
+     .image{ 
+     
+      /* justify-items: center; */
+       flex-direction: column ; 
+       
+     
+     
+ 
       
-      width: 90vw;
-    }
-    
+     }
+
+     #welcome{
+       margin-top: 10%;
+
+
+     }
+
+     #logo{
+       width: 15vw;
+
+
+     }
     .team h2 {
-      font-size: 20px;
+      font-size: 24px;
     }
     
     .team-member {
@@ -215,6 +242,9 @@ section:nth-of-type(3) p {
     .team-member {
       max-width: calc(50% - 40px);
     }
+   
+   
+
     
   }
   
@@ -253,7 +283,7 @@ section:nth-of-type(3) p {
   }
   
   .app-description p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
     margin-top: 0%;
   }
@@ -261,7 +291,7 @@ section:nth-of-type(3) p {
   .download-button {
     display: inline-block;
     padding: 10px 20px;
-    /* background-color: #007bff; */
+   
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -281,13 +311,13 @@ section:nth-of-type(3) p {
     }
     
     .about-app h2 {
-      font-size: 20px;
+      font-size: 24px;
     }
-    /* #to{ */
-      /* border-radius: 90%; */
-    /*  */
+    
+    
+    
 
-    /* } */
+    
     
     .app-image, .app-description {
       max-width: 100%;
@@ -394,9 +424,9 @@ section:nth-of-type(3) p {
       justify-content: space-between;
     }
     
-    /* .navbar-toggle { */
-      /* display: block; */
-     /* }  */
+    
+    
+    
     }
     
       .navbar-collapse {
@@ -410,7 +440,7 @@ section:nth-of-type(3) p {
     background-color: green;
     color: #fff;
     margin-top: -15%;
-    padding: 20px 0;
+    padding: 25px 0;
   }
   
   footer h2, footer h3 {
@@ -439,7 +469,7 @@ section:nth-of-type(3) p {
   }
   
   .row {
-    margin: 2%;
+    margin-left:  10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -448,6 +478,11 @@ section:nth-of-type(3) p {
   .col {
     flex-basis: calc(33.33% - 20px);
     margin-bottom: 0px;
+  }
+  #icon{
+    margin-left: -11%;
+
+
   }
   
   @media (max-width: 767px) {
@@ -470,7 +505,7 @@ section:nth-of-type(3) p {
 
   #story {
     padding: 50px 0;
-    /* background-color: #f8f8f8; */
+    
   }
   
   #story .container {
@@ -484,7 +519,7 @@ section:nth-of-type(3) p {
   }
   
   #story p {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 30px;
@@ -493,16 +528,11 @@ section:nth-of-type(3) p {
   #story img {
     display: block;
     margin: 0 auto;
-    /* max-width: 4px; */
     height: auto;
     border-radius: 10%;
   }
   .mamamboga-image{
-     width: 30vw; 
-
-   
-
-
+     width: 39vw; 
   }
   header {
     display: flex;
@@ -531,15 +561,24 @@ section:nth-of-type(3) p {
     }
   
     h1 {
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 10px;
     }
   
     img {
       margin-top: 10px;
+    
+    }
+    .mamamboga-image{
+     width: 70vw;
+
     }
   }
   
+
+  
+  
+
 
 
   
