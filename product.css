@@ -1,0 +1,32 @@
+/* Set height of rows */
+.row {
+    height: 300px; /* Adjust as necessary */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Set width of images */
+  img {
+    width: 20%;
+    height: 100%;
+  }
+  
+  /* Set margin on images */
+  img:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  /* Add media query for smaller devices */
+  @media screen and (max-width: 600px) {
+    /* Set rows to stack on top of each other */
+    .row {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    /* Set height of images */
+    img {
+      height: auto;
+    }
+  }
+  
